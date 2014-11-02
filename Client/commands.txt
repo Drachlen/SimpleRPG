@@ -1,0 +1,44 @@
+Player commands
+
+Format is:
+
+/command_name [...]
+
+
+
+COMMAND      PARAMETERS    DESC
+roll                       Picks a random number 0-100
+online                     Returns total number of players online
+
+
+
+GM commands
+
+Format is
+
+#command_name [...]
+
+COMMAND      PARAMETERS    DESC
+equipment                  Dump self equipment
+kick         id            Kick a player from the server. Use current target or ID param
+hide         on/off        Hide self from players and monsters
+debug        on/off        Enables debug output for target
+damage       int           Do damage to target
+kill                       Do 32000 damage to target
+hp           int           Set target current HP
+mp           int           Set target current MP
+broadcast    msg           Sends a system message to every connected client
+eval         code          Run javascript code on the server
+summonitem   id            Summon item by ID (if the server has loaded it in memory)
+depop        id            Despawn the targeted entity (the spawngroup will NOT respawn)
+depopzone                  Depop the zone (spawngroups will NOT respawn)
+repopzone                  Will depop any existing entities and respawn the entire zone
+zone         zonename      Teleport to zone
+goto         x,y           Teleport to coordinate
+summon       EID           Summon entity to current x,y (not across maps). optional parameter of "all" instead of EID
+dump         EID/name      Dump every property of the entity (or all entities)
+attributes                 Dump self attributes according to server
+gold                       Dump self gold according to server
+inventory                  Dump self inventory according to server
+offer                      Dumps list of items and gold that the player has put in trade
+time         0.0-1.0       Sets the time of day for all clients

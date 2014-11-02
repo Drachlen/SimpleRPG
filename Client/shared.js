@@ -1,0 +1,3 @@
+/*
+  shared stuff between client and server
+*/

@@ -1,0 +1,526 @@
+html, body {
+  margin:0px;
+  background-color: #000;
+}
+
+#splash {
+  border:0px solid #fff;
+  padding:0px;
+  width:848px;
+  height:575px;
+  text-align:center;
+  font-family:Courier New;
+  font-size:12px;
+  color:#fff;
+}
+
+.sinput {
+  border:1px solid #111;
+  padding:5px;
+  font-weight:bold;
+  font-family:Tahoma;
+  background-color:#eee;
+  width:180px;
+}
+
+.bugreportinput {
+  width:600px;
+  height:280px;
+  border:1px solid #555;
+  background-color:#050505;
+  font-family:Courier New;
+  color:#fff;
+}
+
+.bugreportsubmit {
+  border:1px solid #444;
+  background-color:#000;
+  color:#fff;
+  font-family:Courier New;
+  padding:5px;
+  width:260px;
+  cursor:hand;
+}
+
+.bugreportsubmit:focus {
+  border-color:#0f0;
+}
+.bugreportsubmit:hover {
+  border-color:#0f0;
+}
+
+.suinput {
+  width:200px;
+  cursor:pointer;
+  background-color:#2F2F2F;
+  color:#fff;
+  border:1px solid #111;
+  padding:5px;
+  font-weight:bold;
+  font-family:Tahoma;
+}
+
+.scon {
+  float:left;
+  border:0px solid #333;
+  background-color:#0C0C0C;
+  height:560px;
+  padding-top:15px;
+  font-weight:bold;
+}
+
+.shea {
+  height:20px;
+  background-color:#111;
+  border-bottom:1px solid #333;
+  border-top: 1px solid #333;
+  font-weight:bold;
+  margin-bottom:10px;
+  padding-top:4px;
+  color:3A90DB;
+  font-size:13px;
+}
+
+#loading {
+  font-family:Courier New;
+  font-size:16px;
+  color:#fff;
+  z-index:10001;
+  height:40px;
+}
+
+.splashheader {
+  border-top:1px solid #111;
+  background-color:#000;
+  margin:1px;
+  padding-top:5px;
+  color:#E1D901; 
+}
+
+.splashbutton {
+  width:300px;
+  border:1px solid #222;
+  margin:10px;
+  padding:10px;
+  font-family:Courier New;
+  background-color:#000;
+  color:#1E478A;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.splashbutton:hover {
+  border:1px solid #1E478A;
+}
+
+
+
+
+
+#status {
+  font-family:Courier New;
+  color:#fff;
+  font-size:13px;
+  float:left;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:848px;
+  height:14px;
+  display:none;
+  background-color:#000;
+}
+
+#abilitystatus {
+  font-family:Courier New;
+  color:#fff;
+  font-weight:bold;
+  font-size:11px;
+  float:left;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:830px;
+  height:12px;
+  display:none;
+  overflow:none;
+  background-color:#444;
+  z-index:10;
+}
+
+#cpanel {
+  font-family:Courier New;
+  color:#fff;
+  font-size:13px;
+  float:left;
+  position:absolute;
+  top:14px;
+  left:0px;
+  padding-left:2px;
+  width:154px;
+  height:400px;
+  display:none;
+  border:0px solid red;
+  background-color:#000;
+  padding-right:20px;
+}
+
+#cpabilities {
+  font-family:Courier New;
+  color:#fff;
+  font-size:13px;
+  float:left;
+  position:absolute;
+  /*top:120px;*/
+  top:14px;
+  left:156px;
+  width:20px;
+  height:398px;
+  display:block;
+  border:0px solid red;  
+  padding-left:0px;
+  padding-top:2px;
+  display:none;
+}
+
+.ability {
+  width:16px;
+  height:16px;
+  border:1px solid #1C6816;
+  font-family:Courier New;  
+  text-align:center;
+  font-size:13px;
+  color: #ff9900;
+  margin-bottom:5px;
+  background-color:#0E200C;
+  border-radius:4px;
+}
+
+.abilityunused {
+  border:1px solid #111;
+  color:#222;
+}
+
+
+
+.skey
+{
+  font-weight:bold;
+}
+
+.sval
+{
+  float:right;
+  color:#999;
+  font-weight:normal;  
+}
+
+.statc
+{
+  float:left;
+  width:72px;
+  height:110px;
+  font-weight:bold;
+}
+
+.bar {
+  height:15px;
+  font-weight:bold;
+  border:1px solid #999;
+  margin-bottom:2px;
+  width:150px;
+  background-image: url('gfx/bar.png');
+  background-repeat: no-repeat;
+  background-position: 0;
+  border-radius:4px;
+}
+
+.cmenu {
+  height:135px;
+  margin-top:5px;
+}
+
+#viewport {
+  border:0px solid red;
+  width:672px;
+  height:400px;
+  position:absolute;
+  left:176px;
+  top:14px;
+  overflow:hidden;
+  display:none;
+}
+
+.contentbox {
+  width:650px;
+  height:378px;
+  position:absolute;
+  left:176px;
+  top:14px;
+  color:#fff;
+  font-family:Courier New;
+  background-color:#000;
+  z-index:9999;
+  display:none;
+  font-size:12px;
+  padding:10px;
+  border:1px dashed #091331;
+}
+
+.cboxshadow {
+  width:652px;
+  height:380px;
+  position:absolute;
+  left:-1px;
+  top:-1px;
+  padding:10px;
+  background-color:#000;  
+  opacity:0.6;
+  filter:alpha(opacity=60);
+  display:none; 
+  z-index:9001;
+}
+
+.miniview {
+  display:none;
+  position:absolute;
+  padding:4px;
+  top:59px;
+  left:124px;
+  width:412px;
+  min-height:270px;
+  background-color:#000;
+  border:1px dashed #091331;
+  overflow:none;
+  z-index:9002;
+}
+
+
+
+/* input key indicator: #FF9900 */
+/* delicious blue color: #3A90DB */
+.equipped {
+  color:#3A90DB;
+  float:left;
+  border: 0px solid red;
+  width:200px;
+  padding:5px;
+}
+
+.slot {
+  width:80px;
+  text-align:right;
+  float:left;
+  padding-top:5px;
+  color:#555;
+}
+
+.invitem {
+  color:#fff;
+  padding:5px;
+  border:0px solid red;
+  width:300px;
+}
+
+
+
+
+#chat {
+  position:absolute;
+  left:0px;
+  padding-left:2px;
+  top:414px;
+  height:161px;
+  width:846px;
+  display:none;
+  border:0px solid red;
+  background-color:#050505;
+}
+
+#msglog {
+  border:0px solid #111;
+  width: 435px;
+  height:140px;
+  overflow-y:scroll;
+  overflow-x:auto;
+  font-family: Tahoma;
+  font-size:12px;
+  white-space:normal;
+  word-wrap: break-word;
+  float:left;
+  background-color:#050505;
+  position:absolute;
+  z-index:15000;
+}
+
+#combatlog {
+  border:0px solid #111;
+  width: 400px;
+  height:140px;
+  overflow-y:scroll;
+  overflow-x:auto;
+  font-family: Tahoma;
+  font-size:12px;
+  white-space:normal;
+  word-wrap: break-word;
+  float:right;
+  margin-left:0px;
+}
+
+#chatinput {
+  border:1px solid #111;
+  width:848px;
+  font-family: Tahoma;
+  background-color:#000;
+  height:20px;
+  color:#fff;
+  display:none;
+  position:absolute;
+  top:140px;
+  left:0px;
+  z-index:15001;
+}
+
+
+
+
+
+.map {
+  position:absolute;
+  width: 672px;
+  height: 400px;
+}
+
+#time {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:672px;
+  height:400px;
+  z-index:9998;
+  opacity:0;
+  filter:alpha(opacity=0);
+  background-color:#000;
+  border:1px solid #000;
+  display:none;
+}
+
+#shadow {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:672px;
+  height:400px;
+  z-index:9998;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+  background-color:#000;
+  border:1px solid #000;
+  display:none;
+}
+
+#cursor {
+  position:absolute;
+  width:14px;
+  height:14px;
+  border:1px dashed #fff;
+  z-index:9999;
+  display:none;
+}
+
+
+/* player refers to the local client */
+#player {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin:0px;
+  padding:0px;
+  background-image: url('gfx/player.png');
+  z-index:1004;
+  border:0px solid #000;
+}
+
+
+
+
+.entity {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin:0px;
+  padding:0px;
+  z-index:1005;
+}
+
+
+.fireball {
+  width:13px;
+  height:13px;
+  background-image: url('gfx/fireball.png');
+  background-repeat:no-repeat;
+  position:absolute;
+  top:-16px;
+  left:-16px;
+  z-index:1000;
+}
+
+.heal {
+  width:16px;
+  height:16px;
+  background-image: url('gfx/heal.png');
+  background-repeat:no-repeat;
+  position:absolute;
+  top:-16px;
+  left:-16px;
+  z-index:1100;
+}
+
+#target {
+  width:14px;
+  height:10px;
+  border:1px solid #fff;
+  border-radius:6px;
+  z-index: 999;
+  position:absolute;
+  margin:0px;
+  padding:0px;
+  display:none;
+}
+
+.player {
+  z-index:1004;
+}
+.playerself {
+  z-index:1004;
+  display:none;  
+}
+
+.corpse {
+  z-index:1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+#debug {
+  border:1px solid #444;
+  position:absolute;
+  top: 10px;
+  left: 860px;
+  width:800px;
+  height:800px;
+  font-family: Tahoma;
+  font-size:13px;
+  color: #D88E0E;
+  padding:4px;
+  display:none;
+  overflow:auto;
+}

@@ -1,0 +1,64 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultDir=C:\webserver\htdocs\dropbox\srpg\
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+sr
+	+Misc
+		commands.txt
+	+Server
+		..\..\node\bin\code\srpgserver.js
+		..\..\node\bin\serverdef.js
+	+Editor
+		+Old
+			editor\old\mapeditor.php
+			editor\old\mapeditor.js
+			editor\old\mapeditor.css
+			editor\old\itemeditor.php
+			editor\old\itemeditor.js
+			editor\old\itemeditor.css
+		editor\editor.php
+		editor\editor.js
+		editor\editor.css
+		editor\db.php
+		editor\loottables.php
+		editor\request.php
+		editor\items.php
+		editor\npcs.php
+		editor\spawngroups.php
+		editor\auth.php
+		editor\zones.php
+		editor\exportmap.php
+	+Client
+		client.php
+		client.css
+		maps.js
+		entities.js
+		socket.js
+		def.js
+		interface.js
+		misc.js
+		items.js
+		..\..\node\bin\shared.js
+		client.js
+		menus.js
+[Open project files]
+0=entities.js
+1=client.js
+[Selected Project Files]
+Main=
+Selected=client.js
+[entities.js]
+TopLine=71
+Caret=59,71
+[client.js]
+TopLine=65
+Caret=43,69
